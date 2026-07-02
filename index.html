@@ -12,55 +12,68 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
     <main>
-        <div class="bg-[#FDFCF0] h-20 w-full items-center justify-between flex p-4 gap-4 top-header">
-         <div class="flex gap-8">   
-          <div class="flex items-center gap-2">  
-           <i class='bx bxs-envelope text-2xl'></i>
-           <p>someone@example.com</p>
-          </div>
-          <div class="flex items-center gap-2"> 
-           <i class='bx bxs-phone text-2xl'></i>
-           <p>+00 000 000 000</p>
-          </div>
-          <div class="flex items-center gap-2"> 
-           <i class='bx bxs-map text-2xl'></i>
-           <p>123 Main Street</p>
-          </div>
-         </div>  
-           <img class="h-50 w-70" src="assets/bismillah.webp" alt="bismillah">
-          <div class="flex gap-8"> 
-           <div class="flex gap-2 items-center">
-             <i class='bx bxs-sun text-2xl'></i>
-             <p>Sunrise At: 5:30 AM</p>
-           </div>
-           <div class="flex gap-2 items-center">
-             <i class='bx bxs-moon text-2xl'></i>
-             <p>Sunset At: 5:30 PM</p>
-           </div>
-           <a href="#"><i class='bx bxl-facebook text-2xl'></i></a>
-           <a href="#"><i class='bx bxl-linkedin mr-5 text-2xl'></i></a>
-          </div>
-
-        </div>
-        <header class="flex items-center justify-evenly p-4 pl-8 font-bold">
-            <!-- <h1 class="text-3xl">Website</h1> -->
-             <img src="assets/logo.png" alt="Logo" class="h-40 w-40">
-            <nav>
-                <ul class="flex gap-6">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-            <i class='bx bx-menu'></i>
-            <div class=>
-                <button class="bg-green-500 text-white px-4 py-2 rounded">Free Trial</button>
+     <header class="site-header">
+        <div class="top-header">
+            <div class="connection">
+                <i class='bx bxs-envelope'></i>
+                <p>someone@example.com</p>
+                <i class='bx bxs-phone'></i>
+                <p>+1 (123) 456-7890</p>
+                <i class='bx bxs-map'></i>
+                <p>123 Main Street</p>
             </div>
-        </header>
+        </div>
+        <nav class="navbar">
+            <a href="#home" class="logo" aria-label="Quran Learning home">
+                <img src="assets/logo.png" alt="">
+            </a>
+
+            <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+                <i class='bx bx-menu'></i>
+            </button>
+
+            <ul class="nav-links">
+                <li><a class="active" href="#home">Home</a></li>
+                <li class="nav-dropdown">
+                    <button class="dropdown-toggle" type="button" aria-expanded="false" aria-haspopup="true">
+                        Courses
+                        <i class='bx bx-chevron-down'></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#courses">All Courses</a></li>
+                        <li><a href="#course-tajweed">Tajweed</a></li>
+                        <li><a href="#course-nazra">Nazra</a></li>
+                        <li><a href="#course-hifz">Hifz</a></li>
+                    </ul>
+                </li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="mobile-free-trial"><a href="#contact">Free Trial</a></li>
+            </ul>
+            <div class="free-trial">
+                <button>Free Trial</button>
+            </div>
+        </nav>
+     </header>
+     <section class="hero-section">
+        <div class="hero-details">
+            <p class="hadith">خَيْرُكُمْ مَنْ تَعَلَّمَ الْقُرْآنَ وَعَلَّمَهُ</p>
+            <h6>" The best among you are those who learn the Quran and teach it. "</h6>
+            <h1>Start Your Quranic Journey with <span>Faaz AL Quran</span></h1>
+            <p>Learn proper Tajweed, correct pronunciation, and beautiful Quran recitation online from comfort of your home.</p>
+            <div class="hero-action">
+                <button>Book Free Trial</button>
+                <button>Learn More</button>
+            </div>
+            
+        </div>
+     </section>
+
+     <section>
         
+     </section>
+   
     </main>
 
     <script src="script.js"></script>
